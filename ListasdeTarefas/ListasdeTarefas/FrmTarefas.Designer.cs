@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTarefas));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -111,6 +112,7 @@
             // 
             // pBImagem
             // 
+            this.pBImagem.Image = ((System.Drawing.Image)(resources.GetObject("pBImagem.Image")));
             this.pBImagem.Location = new System.Drawing.Point(362, 139);
             this.pBImagem.Name = "pBImagem";
             this.pBImagem.Size = new System.Drawing.Size(190, 179);
@@ -152,6 +154,7 @@
             this.btnPrint.TabIndex = 13;
             this.btnPrint.Text = "Salvar Tela";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnLimpar
             // 
@@ -161,6 +164,7 @@
             this.btnLimpar.TabIndex = 14;
             this.btnLimpar.Text = "Limpar Campos";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // FrmTarefas
             // 
@@ -186,7 +190,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmTarefas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pBImagem)).EndInit();

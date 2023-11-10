@@ -23,3 +23,4 @@ C:\Users\pedro.hdsantos4\source\repos\ListasdeTarefas\ListasdeTarefas\bin\Debug\
 C:\Users\pedro.hdsantos4\source\repos\ListasdeTarefas\ListasdeTarefas\bin\Debug\net6.0-windows\de\PdfSharp.Charting.resources.dll
 C:\Users\pedro.hdsantos4\source\repos\ListasdeTarefas\ListasdeTarefas\bin\Debug\net6.0-windows\de\PdfSharp.resources.dll
 C:\Users\pedro.hdsantos4\source\repos\ListasdeTarefas\ListasdeTarefas\obj\Debug\net6.0-windows\ListasdeTarefas.csproj.CopyComplete
+C:\Users\pedro.hdsantos4\source\repos\ListasdeTarefas\ListasdeTarefas\obj\Debug\net6.0-windows\ListaTarefas.FrmCadastroFuncionario.resources

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ListaTarefas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,12 @@ namespace ListasdeTarefas
         {
             FrmTarefas tarefas = new FrmTarefas();
             tarefas.ShowDialog();
+        }
+
+        private void btnFunc_Click(object sender, EventArgs e)
+        {
+            FrmCadastroFuncionario func = new FrmCadastroFuncionario();
+            func.ShowDialog();
         }
     }
 }
