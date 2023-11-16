@@ -49,7 +49,7 @@
             this.btCadastra = new System.Windows.Forms.Button();
             this.btRegistra = new System.Windows.Forms.Button();
             this.btLimpar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbEntrada = new System.Windows.Forms.GroupBox();
             this.lblEntrada = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.gbSaida = new System.Windows.Forms.GroupBox();
@@ -58,7 +58,7 @@
             this.bnSaida = new System.Windows.Forms.Button();
             this.lblData = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox1.SuspendLayout();
+            this.gbEntrada.SuspendLayout();
             this.gbSaida.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,14 +109,14 @@
             this.cbCargo.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbCargo.FormattingEnabled = true;
             this.cbCargo.Items.AddRange(new object[] {
-            "1. UX Designer",
-            "2. Segurança de Informação",
-            "3. Analista de Business Intelligence",
-            "4. Suporte técnico",
-            "5. Arquitetura de redes",
-            "6. Programação",
-            "7. Desenvolvedor de software",
-            "8. Desenvolvedor de aplicativos"});
+            "UX Designer",
+            "Segurança de Informação",
+            "Analista de Business Intelligence",
+            "Suporte técnico",
+            "Arquitetura de redes",
+            "Programação",
+            "Desenvolvedor de software",
+            "Desenvolvedor de aplicativos"});
             this.cbCargo.Location = new System.Drawing.Point(368, 137);
             this.cbCargo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbCargo.Name = "cbCargo";
@@ -140,7 +140,7 @@
             this.mtSalario.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mtSalario.Location = new System.Drawing.Point(11, 204);
             this.mtSalario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.mtSalario.Mask = "000000,00";
+            this.mtSalario.Mask = "00,000.00";
             this.mtSalario.Name = "mtSalario";
             this.mtSalario.Size = new System.Drawing.Size(125, 31);
             this.mtSalario.TabIndex = 7;
@@ -161,7 +161,7 @@
             this.mtCPF.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mtCPF.Location = new System.Drawing.Point(368, 204);
             this.mtCPF.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.mtCPF.Mask = "000.000.000-00";
+            this.mtCPF.Mask = "000,000,000-00";
             this.mtCPF.Name = "mtCPF";
             this.mtCPF.Size = new System.Drawing.Size(139, 31);
             this.mtCPF.TabIndex = 9;
@@ -182,7 +182,7 @@
             this.mtPhone.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mtPhone.Location = new System.Drawing.Point(12, 272);
             this.mtPhone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.mtPhone.Mask = "(00)00000-0000";
+            this.mtPhone.Mask = "(00) 00000-0000";
             this.mtPhone.Name = "mtPhone";
             this.mtPhone.Size = new System.Drawing.Size(141, 31);
             this.mtPhone.TabIndex = 11;
@@ -272,18 +272,19 @@
             this.btLimpar.TabIndex = 20;
             this.btLimpar.Text = "Limpar";
             this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
-            // groupBox1
+            // gbEntrada
             // 
-            this.groupBox1.Controls.Add(this.lblEntrada);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.btRegistra);
-            this.groupBox1.Location = new System.Drawing.Point(13, 420);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(265, 150);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Entrada";
+            this.gbEntrada.Controls.Add(this.lblEntrada);
+            this.gbEntrada.Controls.Add(this.label10);
+            this.gbEntrada.Controls.Add(this.btRegistra);
+            this.gbEntrada.Location = new System.Drawing.Point(13, 420);
+            this.gbEntrada.Name = "gbEntrada";
+            this.gbEntrada.Size = new System.Drawing.Size(265, 150);
+            this.gbEntrada.TabIndex = 21;
+            this.gbEntrada.TabStop = false;
+            this.gbEntrada.Text = "Entrada";
             // 
             // lblEntrada
             // 
@@ -357,7 +358,6 @@
             // 
             // timer2
             // 
-            this.timer2.Enabled = true;
             this.timer2.Interval = 10000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
@@ -370,7 +370,7 @@
             this.ClientSize = new System.Drawing.Size(633, 589);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.gbSaida);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbEntrada);
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.btCadastra);
             this.Controls.Add(this.lblHoraAtual);
@@ -397,8 +397,8 @@
             this.Name = "FrmCadastroFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Registro de Funcionarios";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbEntrada.ResumeLayout(false);
+            this.gbEntrada.PerformLayout();
             this.gbSaida.ResumeLayout(false);
             this.gbSaida.PerformLayout();
             this.ResumeLayout(false);
@@ -428,7 +428,7 @@
         private Button btCadastra;
         private Button btRegistra;
         private Button btLimpar;
-        private GroupBox groupBox1;
+        private GroupBox gbEntrada;
         private Label lblEntrada;
         private Label label10;
         private GroupBox gbSaida;

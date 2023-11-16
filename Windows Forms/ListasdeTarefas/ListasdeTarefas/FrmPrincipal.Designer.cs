@@ -50,6 +50,8 @@
             // btnTarefas
             // 
             this.btnTarefas.BackColor = System.Drawing.Color.Transparent;
+            this.btnTarefas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTarefas.BackgroundImage")));
+            this.btnTarefas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTarefas.Location = new System.Drawing.Point(474, 222);
             this.btnTarefas.Name = "btnTarefas";
             this.btnTarefas.Size = new System.Drawing.Size(225, 225);
@@ -62,11 +64,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(251, 25);
+            this.label1.Location = new System.Drawing.Point(272, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 41);
+            this.label1.Size = new System.Drawing.Size(161, 41);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Seja Natural";
+            this.label1.Text = "Principal";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnFunc
@@ -85,6 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(707, 484);
             this.Controls.Add(this.btnFunc);
