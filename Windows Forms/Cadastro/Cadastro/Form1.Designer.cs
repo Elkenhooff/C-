@@ -89,6 +89,7 @@
             this.dTPIdade.Name = "dTPIdade";
             this.dTPIdade.Size = new System.Drawing.Size(117, 26);
             this.dTPIdade.TabIndex = 2;
+            this.dTPIdade.ValueChanged += new System.EventHandler(this.dTPIdade_ValueChanged);
             // 
             // txtNome
             // 
@@ -126,39 +127,50 @@
             // 
             // btnVisualizar
             // 
+            this.btnVisualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnVisualizar.Image")));
+            this.btnVisualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVisualizar.Location = new System.Drawing.Point(12, 209);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(117, 43);
             this.btnVisualizar.TabIndex = 1;
             this.btnVisualizar.Text = "Visualizar";
+            this.btnVisualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVisualizar.UseVisualStyleBackColor = true;
             this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
             // btnArquivo
             // 
-            this.btnArquivo.Location = new System.Drawing.Point(190, 209);
+            this.btnArquivo.Image = ((System.Drawing.Image)(resources.GetObject("btnArquivo.Image")));
+            this.btnArquivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnArquivo.Location = new System.Drawing.Point(178, 209);
             this.btnArquivo.Name = "btnArquivo";
-            this.btnArquivo.Size = new System.Drawing.Size(140, 43);
+            this.btnArquivo.Size = new System.Drawing.Size(171, 43);
             this.btnArquivo.TabIndex = 2;
             this.btnArquivo.Text = "Abrir Arquivos";
+            this.btnArquivo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnArquivo.UseVisualStyleBackColor = true;
             this.btnArquivo.Click += new System.EventHandler(this.btnArquivo_Click);
             // 
             // btnSalvar
             // 
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.Location = new System.Drawing.Point(393, 209);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(117, 43);
             this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(12, 296);
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
+            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImprimir.Location = new System.Drawing.Point(12, 338);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(157, 38);
+            this.btnImprimir.Size = new System.Drawing.Size(188, 38);
             this.btnImprimir.TabIndex = 4;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -166,11 +178,14 @@
             // 
             // btnPasta
             // 
-            this.btnPasta.Location = new System.Drawing.Point(12, 340);
+            this.btnPasta.Image = ((System.Drawing.Image)(resources.GetObject("btnPasta.Image")));
+            this.btnPasta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPasta.Location = new System.Drawing.Point(12, 294);
             this.btnPasta.Name = "btnPasta";
-            this.btnPasta.Size = new System.Drawing.Size(157, 38);
+            this.btnPasta.Size = new System.Drawing.Size(188, 38);
             this.btnPasta.TabIndex = 5;
             this.btnPasta.Text = "Selecionar Pasta";
+            this.btnPasta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPasta.UseVisualStyleBackColor = true;
             this.btnPasta.Click += new System.EventHandler(this.btnPasta_Click);
             // 

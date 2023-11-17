@@ -89,5 +89,18 @@ namespace Cadastro
                 string pastaSelecionada = folderBrowserDialog1.SelectedPath;
             }
         }
+
+        private void dTPIdade_ValueChanged(object sender, EventArgs e)
+        {
+            //Calcular a Idade e Atribuir para a LabelIdade
+            int anoNascimento, idade;
+            string ano;
+            ano = dTPIdade.Value.ToString();
+            ano = ano.Substring(6, 4);
+            lblIdade.Text = ano;
+            anoNascimento = Convert.ToInt32(ano);
+            idade = DateTime.Now.Year - anoNascimento;
+            lblIdade.Text = idade.ToString() + " anos";
+        }
     }
 }
