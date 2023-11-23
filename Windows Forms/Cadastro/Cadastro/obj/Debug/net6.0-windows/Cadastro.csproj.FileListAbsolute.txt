@@ -18,3 +18,4 @@ C:\Users\pedro.hdsantos4\source\repos\Cadastro\Cadastro\obj\Debug\net6.0-windows
 C:\Users\pedro.hdsantos4\source\repos\Cadastro\Cadastro\obj\Debug\net6.0-windows\Cadastro.FrmClientes.resources
 C:\Users\pedro.hdsantos4\source\repos\Cadastro\Cadastro\obj\Debug\net6.0-windows\Cadastro.FrmMenu.resources
 C:\Users\pedro.hdsantos4\source\repos\Cadastro\Cadastro\obj\Debug\net6.0-windows\Cadastro.Properties.Resources.resources
+C:\Users\pedro.hdsantos4\source\repos\Cadastro\Cadastro\obj\Debug\net6.0-windows\Cadastro.FrmFornecedor.resources

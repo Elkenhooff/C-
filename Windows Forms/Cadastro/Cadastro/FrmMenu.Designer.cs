@@ -60,6 +60,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1444, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // cadastrosToolStripMenuItem
             // 
@@ -91,6 +92,7 @@
             this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
             this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.fornecedoresToolStripMenuItem.Text = "Fornecedores";
+            this.fornecedoresToolStripMenuItem.Click += new System.EventHandler(this.fornecedoresToolStripMenuItem_Click);
             // 
             // funcionáriosToolStripMenuItem
             // 
@@ -117,6 +119,7 @@
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // vendasToolStripMenuItem
             // 

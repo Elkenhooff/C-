@@ -1,6 +1,6 @@
 ﻿namespace Cadastro
 {
-    partial class FrmClientes
+    partial class FrmFornecedor
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFornecedor));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCódigo = new System.Windows.Forms.Label();
             this.lblEndereço = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblDtNasc = new System.Windows.Forms.Label();
             this.lblUF = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblCep = new System.Windows.Forms.Label();
-            this.lblCpf = new System.Windows.Forms.Label();
-            this.lblComplemento = new System.Windows.Forms.Label();
+            this.lblCNPJ2 = new System.Windows.Forms.Label();
+            this.lblCNPJ = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
             this.tbCódigo = new System.Windows.Forms.TextBox();
             this.tbNome = new System.Windows.Forms.TextBox();
             this.tBEndereço = new System.Windows.Forms.TextBox();
             this.tBCidade = new System.Windows.Forms.TextBox();
-            this.tbComplemento = new System.Windows.Forms.TextBox();
-            this.mTBCPF = new System.Windows.Forms.MaskedTextBox();
+            this.mTBPCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.mTBCep = new System.Windows.Forms.MaskedTextBox();
             this.mTBTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.mTBDtNasc = new System.Windows.Forms.MaskedTextBox();
             this.cBUf = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -61,18 +58,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tBNumero = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnImprimirTela = new System.Windows.Forms.Button();
             this.btnLimparDados = new System.Windows.Forms.Button();
             this.btnNovoCli = new System.Windows.Forms.Button();
             this.btnAlteraCli = new System.Windows.Forms.Button();
             this.btnExcluirCli = new System.Windows.Forms.Button();
-            this.dGClientes = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dGFornecedor = new System.Windows.Forms.DataGridView();
+            this.lblForcenedorCad = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnImprimirTela = new System.Windows.Forms.Button();
+            this.mTBCNPJ = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGFornecedor)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,15 +112,6 @@
             this.lblNome.TabIndex = 3;
             this.lblNome.Text = "Nome";
             // 
-            // lblDtNasc
-            // 
-            this.lblDtNasc.AutoSize = true;
-            this.lblDtNasc.Location = new System.Drawing.Point(430, 278);
-            this.lblDtNasc.Name = "lblDtNasc";
-            this.lblDtNasc.Size = new System.Drawing.Size(68, 18);
-            this.lblDtNasc.TabIndex = 4;
-            this.lblDtNasc.Text = "Dt. Nasc";
-            // 
             // lblUF
             // 
             this.lblUF.AutoSize = true;
@@ -135,7 +124,7 @@
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(225, 278);
+            this.lblTelefone.Location = new System.Drawing.Point(288, 278);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(66, 18);
             this.lblTelefone.TabIndex = 6;
@@ -151,23 +140,23 @@
             this.lblCep.TabIndex = 7;
             this.lblCep.Text = "CEP";
             // 
-            // lblCpf
+            // lblCNPJ2
             // 
-            this.lblCpf.AutoSize = true;
-            this.lblCpf.Location = new System.Drawing.Point(164, 33);
-            this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(41, 18);
-            this.lblCpf.TabIndex = 8;
-            this.lblCpf.Text = "CPF";
+            this.lblCNPJ2.AutoSize = true;
+            this.lblCNPJ2.Location = new System.Drawing.Point(164, 33);
+            this.lblCNPJ2.Name = "lblCNPJ2";
+            this.lblCNPJ2.Size = new System.Drawing.Size(50, 18);
+            this.lblCNPJ2.TabIndex = 8;
+            this.lblCNPJ2.Text = "CNPJ";
             // 
-            // lblComplemento
+            // lblCNPJ
             // 
-            this.lblComplemento.AutoSize = true;
-            this.lblComplemento.Location = new System.Drawing.Point(18, 278);
-            this.lblComplemento.Name = "lblComplemento";
-            this.lblComplemento.Size = new System.Drawing.Size(58, 18);
-            this.lblComplemento.TabIndex = 9;
-            this.lblComplemento.Text = "Compl:";
+            this.lblCNPJ.AutoSize = true;
+            this.lblCNPJ.Location = new System.Drawing.Point(18, 278);
+            this.lblCNPJ.Name = "lblCNPJ";
+            this.lblCNPJ.Size = new System.Drawing.Size(50, 18);
+            this.lblCNPJ.TabIndex = 9;
+            this.lblCNPJ.Text = "CNPJ";
             // 
             // lblCidade
             // 
@@ -206,28 +195,21 @@
             this.tBCidade.Size = new System.Drawing.Size(255, 26);
             this.tBCidade.TabIndex = 14;
             // 
-            // tbComplemento
+            // mTBPCNPJ
             // 
-            this.tbComplemento.Location = new System.Drawing.Point(94, 275);
-            this.tbComplemento.Name = "tbComplemento";
-            this.tbComplemento.Size = new System.Drawing.Size(130, 26);
-            this.tbComplemento.TabIndex = 15;
-            // 
-            // mTBCPF
-            // 
-            this.mTBCPF.Location = new System.Drawing.Point(211, 25);
-            this.mTBCPF.Mask = "000,000,000-00";
-            this.mTBCPF.Name = "mTBCPF";
-            this.mTBCPF.Size = new System.Drawing.Size(124, 26);
-            this.mTBCPF.TabIndex = 16;
+            this.mTBPCNPJ.Location = new System.Drawing.Point(220, 26);
+            this.mTBPCNPJ.Mask = "00,000,000/0000-00";
+            this.mTBPCNPJ.Name = "mTBPCNPJ";
+            this.mTBPCNPJ.Size = new System.Drawing.Size(158, 26);
+            this.mTBPCNPJ.TabIndex = 16;
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisar.Location = new System.Drawing.Point(341, 20);
+            this.btnPesquisar.Location = new System.Drawing.Point(452, 13);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(119, 34);
+            this.btnPesquisar.Size = new System.Drawing.Size(119, 42);
             this.btnPesquisar.TabIndex = 17;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -243,19 +225,11 @@
             // 
             // mTBTelefone
             // 
-            this.mTBTelefone.Location = new System.Drawing.Point(297, 275);
+            this.mTBTelefone.Location = new System.Drawing.Point(360, 275);
             this.mTBTelefone.Mask = "(00) 00000-0000";
             this.mTBTelefone.Name = "mTBTelefone";
             this.mTBTelefone.Size = new System.Drawing.Size(127, 26);
             this.mTBTelefone.TabIndex = 19;
-            // 
-            // mTBDtNasc
-            // 
-            this.mTBDtNasc.Location = new System.Drawing.Point(504, 275);
-            this.mTBDtNasc.Mask = "00/00/0000";
-            this.mTBDtNasc.Name = "mTBDtNasc";
-            this.mTBDtNasc.Size = new System.Drawing.Size(87, 26);
-            this.mTBDtNasc.TabIndex = 20;
             // 
             // cBUf
             // 
@@ -361,6 +335,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Comandos";
             // 
+            // btnImprimirTela
+            // 
+            this.btnImprimirTela.Font = new System.Drawing.Font("Arial", 12.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnImprimirTela.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirTela.Image")));
+            this.btnImprimirTela.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnImprimirTela.Location = new System.Drawing.Point(6, 190);
+            this.btnImprimirTela.Name = "btnImprimirTela";
+            this.btnImprimirTela.Size = new System.Drawing.Size(149, 42);
+            this.btnImprimirTela.TabIndex = 4;
+            this.btnImprimirTela.Text = "Imprimir Tela";
+            this.btnImprimirTela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnImprimirTela.UseVisualStyleBackColor = true;
+            // 
             // btnLimparDados
             // 
             this.btnLimparDados.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -410,31 +397,31 @@
             this.btnExcluirCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcluirCli.UseVisualStyleBackColor = true;
             // 
-            // dGClientes
+            // dGFornecedor
             // 
-            this.dGClientes.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dGClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGClientes.Location = new System.Drawing.Point(14, 349);
-            this.dGClientes.Name = "dGClientes";
-            this.dGClientes.RowTemplate.Height = 25;
-            this.dGClientes.Size = new System.Drawing.Size(748, 202);
-            this.dGClientes.TabIndex = 26;
+            this.dGFornecedor.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dGFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGFornecedor.Location = new System.Drawing.Point(14, 349);
+            this.dGFornecedor.Name = "dGFornecedor";
+            this.dGFornecedor.RowTemplate.Height = 25;
+            this.dGFornecedor.Size = new System.Drawing.Size(748, 202);
+            this.dGFornecedor.TabIndex = 26;
             // 
-            // label2
+            // lblForcenedorCad
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 328);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 18);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Clientes Cadastrados";
+            this.lblForcenedorCad.AutoSize = true;
+            this.lblForcenedorCad.Location = new System.Drawing.Point(14, 328);
+            this.lblForcenedorCad.Name = "lblForcenedorCad";
+            this.lblForcenedorCad.Size = new System.Drawing.Size(201, 18);
+            this.lblForcenedorCad.TabIndex = 27;
+            this.lblForcenedorCad.Text = "Fornecedores Cadastrados";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblCódigo);
             this.groupBox2.Controls.Add(this.tbCódigo);
-            this.groupBox2.Controls.Add(this.lblCpf);
-            this.groupBox2.Controls.Add(this.mTBCPF);
+            this.groupBox2.Controls.Add(this.lblCNPJ2);
+            this.groupBox2.Controls.Add(this.mTBPCNPJ);
             this.groupBox2.Controls.Add(this.btnPesquisar);
             this.groupBox2.Location = new System.Drawing.Point(14, 98);
             this.groupBox2.Name = "groupBox2";
@@ -443,45 +430,38 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Efetuar Pesquisa";
             // 
-            // btnImprimirTela
+            // mTBCNPJ
             // 
-            this.btnImprimirTela.Font = new System.Drawing.Font("Arial", 12.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnImprimirTela.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirTela.Image")));
-            this.btnImprimirTela.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnImprimirTela.Location = new System.Drawing.Point(6, 190);
-            this.btnImprimirTela.Name = "btnImprimirTela";
-            this.btnImprimirTela.Size = new System.Drawing.Size(149, 42);
-            this.btnImprimirTela.TabIndex = 4;
-            this.btnImprimirTela.Text = "Imprimir Tela";
-            this.btnImprimirTela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimirTela.UseVisualStyleBackColor = true;
+            this.mTBCNPJ.Location = new System.Drawing.Point(94, 275);
+            this.mTBCNPJ.Mask = "00,000,000/0000-00";
+            this.mTBCNPJ.Name = "mTBCNPJ";
+            this.mTBCNPJ.Size = new System.Drawing.Size(155, 26);
+            this.mTBCNPJ.TabIndex = 29;
             // 
-            // FrmClientes
+            // FrmFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(777, 585);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dGClientes);
+            this.Controls.Add(this.mTBCNPJ);
+            this.Controls.Add(this.lblForcenedorCad);
+            this.Controls.Add(this.dGFornecedor);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tBNumero);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.cBUf);
-            this.Controls.Add(this.mTBDtNasc);
             this.Controls.Add(this.mTBTelefone);
             this.Controls.Add(this.mTBCep);
-            this.Controls.Add(this.tbComplemento);
             this.Controls.Add(this.tBCidade);
             this.Controls.Add(this.tBEndereço);
             this.Controls.Add(this.tbNome);
             this.Controls.Add(this.lblCidade);
-            this.Controls.Add(this.lblComplemento);
+            this.Controls.Add(this.lblCNPJ);
             this.Controls.Add(this.lblCep);
             this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.lblUF);
-            this.Controls.Add(this.lblDtNasc);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblEndereço);
             this.Controls.Add(this.pictureBox1);
@@ -490,14 +470,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmClientes";
+            this.Name = "FrmFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Cadastro de Clientes";
+            this.Text = "Cadastro de Fornecedores";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGFornecedor)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -511,23 +491,20 @@
         private Label lblCódigo;
         private Label lblEndereço;
         private Label lblNome;
-        private Label lblDtNasc;
         private Label lblUF;
         private Label lblTelefone;
         private Label lblCep;
-        private Label lblCpf;
-        private Label lblComplemento;
+        private Label lblCNPJ2;
+        private Label lblCNPJ;
         private Label lblCidade;
         private TextBox tbCódigo;
         private TextBox tbNome;
         private TextBox tBEndereço;
         private TextBox tBCidade;
-        private TextBox tbComplemento;
-        private MaskedTextBox mTBCPF;
+        private MaskedTextBox mTBPCNPJ;
         private Button btnPesquisar;
         private MaskedTextBox mTBCep;
         private MaskedTextBox mTBTelefone;
-        private MaskedTextBox mTBDtNasc;
         private ComboBox cBUf;
         private StatusStrip statusStrip1;
         private System.Windows.Forms.Timer timer1;
@@ -538,13 +515,14 @@
         private Button btnNovoCli;
         private Button btnAlteraCli;
         private Button btnExcluirCli;
-        private DataGridView dGClientes;
-        private Label label2;
+        private DataGridView dGFornecedor;
+        private Label lblForcenedorCad;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel lblData;
         private ToolStripStatusLabel toolStripStatusLabel2;
         private ToolStripStatusLabel lbHora;
         private Button btnImprimirTela;
         private GroupBox groupBox2;
+        private MaskedTextBox mTBCNPJ;
     }
 }

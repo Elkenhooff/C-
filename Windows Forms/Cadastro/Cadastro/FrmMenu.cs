@@ -27,5 +27,26 @@ namespace Cadastro
             FrmClientes cliente = new FrmClientes();
             cliente.ShowDialog();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult resp;
+            resp = MessageBox.Show("Deseja realmente sair?", "Sistema TechTI26", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resp == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFornecedor fornecedor = new FrmFornecedor();
+            fornecedor.ShowDialog();
+        }
     }
 }
