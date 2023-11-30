@@ -61,6 +61,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tBNumero = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnImprimirTela = new System.Windows.Forms.Button();
             this.btnLimparDados = new System.Windows.Forms.Button();
             this.btnNovoCli = new System.Windows.Forms.Button();
             this.btnAlteraCli = new System.Windows.Forms.Button();
@@ -68,7 +69,7 @@
             this.dGClientes = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnImprimirTela = new System.Windows.Forms.Button();
+            this.btnTeste = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -293,6 +294,7 @@
             this.cBUf.Name = "cBUf";
             this.cBUf.Size = new System.Drawing.Size(63, 26);
             this.cBUf.TabIndex = 21;
+            this.cBUf.SelectedIndexChanged += new System.EventHandler(this.cBUf_SelectedIndexChanged);
             // 
             // statusStrip1
             // 
@@ -361,6 +363,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Comandos";
             // 
+            // btnImprimirTela
+            // 
+            this.btnImprimirTela.Font = new System.Drawing.Font("Arial", 12.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnImprimirTela.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirTela.Image")));
+            this.btnImprimirTela.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnImprimirTela.Location = new System.Drawing.Point(6, 190);
+            this.btnImprimirTela.Name = "btnImprimirTela";
+            this.btnImprimirTela.Size = new System.Drawing.Size(149, 42);
+            this.btnImprimirTela.TabIndex = 4;
+            this.btnImprimirTela.Text = "Imprimir Tela";
+            this.btnImprimirTela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnImprimirTela.UseVisualStyleBackColor = true;
+            // 
             // btnLimparDados
             // 
             this.btnLimparDados.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -419,6 +434,7 @@
             this.dGClientes.RowTemplate.Height = 25;
             this.dGClientes.Size = new System.Drawing.Size(748, 202);
             this.dGClientes.TabIndex = 26;
+            this.dGClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGClientes_CellContentClick);
             // 
             // label2
             // 
@@ -443,18 +459,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Efetuar Pesquisa";
             // 
-            // btnImprimirTela
+            // btnTeste
             // 
-            this.btnImprimirTela.Font = new System.Drawing.Font("Arial", 12.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnImprimirTela.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirTela.Image")));
-            this.btnImprimirTela.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnImprimirTela.Location = new System.Drawing.Point(6, 190);
-            this.btnImprimirTela.Name = "btnImprimirTela";
-            this.btnImprimirTela.Size = new System.Drawing.Size(149, 42);
-            this.btnImprimirTela.TabIndex = 4;
-            this.btnImprimirTela.Text = "Imprimir Tela";
-            this.btnImprimirTela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimirTela.UseVisualStyleBackColor = true;
+            this.btnTeste.Location = new System.Drawing.Point(595, 347);
+            this.btnTeste.Name = "btnTeste";
+            this.btnTeste.Size = new System.Drawing.Size(75, 23);
+            this.btnTeste.TabIndex = 29;
+            this.btnTeste.Text = "Teste de Conexão";
+            this.btnTeste.UseVisualStyleBackColor = true;
+            this.btnTeste.Click += new System.EventHandler(this.btnTeste_Click);
             // 
             // FrmClientes
             // 
@@ -462,6 +475,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(777, 585);
+            this.Controls.Add(this.btnTeste);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dGClientes);
             this.Controls.Add(this.groupBox1);
@@ -546,5 +560,6 @@
         private ToolStripStatusLabel lbHora;
         private Button btnImprimirTela;
         private GroupBox groupBox2;
+        private Button btnTeste;
     }
 }
