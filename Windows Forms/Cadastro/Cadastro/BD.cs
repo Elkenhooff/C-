@@ -14,7 +14,7 @@ namespace Cadastro
         {
             get //Obter a string
             {
-                return @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\pedro.hdsantos4\Documents\BD_Projeto1.mdf; Integrated Security = True; Connect Timeout = 30";
+                return @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\pedro.hdsantos4\Documents\BD_Projeto.mdf; Integrated Security = True; Connect Timeout = 30";
             }
         }
     }

@@ -70,6 +70,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnTeste = new System.Windows.Forms.Button();
+            this.lblCPF2 = new System.Windows.Forms.Label();
+            this.mTBCPF2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -190,14 +192,14 @@
             // 
             this.tbNome.Location = new System.Drawing.Point(94, 179);
             this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(497, 26);
+            this.tbNome.Size = new System.Drawing.Size(330, 26);
             this.tbNome.TabIndex = 12;
             // 
             // tBEndereço
             // 
             this.tBEndereço.Location = new System.Drawing.Point(94, 211);
             this.tBEndereço.Name = "tBEndereço";
-            this.tBEndereço.Size = new System.Drawing.Size(393, 26);
+            this.tBEndereço.Size = new System.Drawing.Size(380, 26);
             this.tBEndereço.TabIndex = 13;
             // 
             // tBCidade
@@ -400,6 +402,7 @@
             this.btnNovoCli.Text = "Novo Cliente";
             this.btnNovoCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNovoCli.UseVisualStyleBackColor = true;
+            this.btnNovoCli.Click += new System.EventHandler(this.btnNovoCli_Click);
             // 
             // btnAlteraCli
             // 
@@ -469,12 +472,31 @@
             this.btnTeste.UseVisualStyleBackColor = true;
             this.btnTeste.Click += new System.EventHandler(this.btnTeste_Click);
             // 
+            // lblCPF2
+            // 
+            this.lblCPF2.AutoSize = true;
+            this.lblCPF2.Location = new System.Drawing.Point(424, 187);
+            this.lblCPF2.Name = "lblCPF2";
+            this.lblCPF2.Size = new System.Drawing.Size(41, 18);
+            this.lblCPF2.TabIndex = 31;
+            this.lblCPF2.Text = "CPF";
+            // 
+            // mTBCPF2
+            // 
+            this.mTBCPF2.Location = new System.Drawing.Point(471, 179);
+            this.mTBCPF2.Mask = "000,000,000-00";
+            this.mTBCPF2.Name = "mTBCPF2";
+            this.mTBCPF2.Size = new System.Drawing.Size(120, 26);
+            this.mTBCPF2.TabIndex = 32;
+            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(777, 585);
+            this.Controls.Add(this.mTBCPF2);
+            this.Controls.Add(this.lblCPF2);
             this.Controls.Add(this.btnTeste);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dGClientes);
@@ -561,5 +583,7 @@
         private Button btnImprimirTela;
         private GroupBox groupBox2;
         private Button btnTeste;
+        private Label lblCPF2;
+        private MaskedTextBox mTBCPF2;
     }
 }

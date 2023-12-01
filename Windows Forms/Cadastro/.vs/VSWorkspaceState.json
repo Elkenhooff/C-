@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Cadastro"
   ],
-  "SelectedNode": "\\TITech.sln",
+  "SelectedNode": "\\Cadastro\\FrmClientes.cs",
   "PreviewInSolutionExplorer": false
 }

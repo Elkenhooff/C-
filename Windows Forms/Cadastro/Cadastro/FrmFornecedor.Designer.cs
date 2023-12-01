@@ -66,7 +66,7 @@
             this.dGFornecedor = new System.Windows.Forms.DataGridView();
             this.lblForcenedorCad = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.mTBCNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.mTBCNPJ2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -369,9 +369,10 @@
             this.btnNovoCli.Name = "btnNovoCli";
             this.btnNovoCli.Size = new System.Drawing.Size(149, 42);
             this.btnNovoCli.TabIndex = 0;
-            this.btnNovoCli.Text = "Novo Cliente";
+            this.btnNovoCli.Text = "Novo Fornec.";
             this.btnNovoCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNovoCli.UseVisualStyleBackColor = true;
+            this.btnNovoCli.Click += new System.EventHandler(this.btnNovoCli_Click);
             // 
             // btnAlteraCli
             // 
@@ -430,13 +431,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Efetuar Pesquisa";
             // 
-            // mTBCNPJ
+            // mTBCNPJ2
             // 
-            this.mTBCNPJ.Location = new System.Drawing.Point(94, 275);
-            this.mTBCNPJ.Mask = "00,000,000/0000-00";
-            this.mTBCNPJ.Name = "mTBCNPJ";
-            this.mTBCNPJ.Size = new System.Drawing.Size(155, 26);
-            this.mTBCNPJ.TabIndex = 29;
+            this.mTBCNPJ2.Location = new System.Drawing.Point(94, 275);
+            this.mTBCNPJ2.Mask = "00,000,000/0000-00";
+            this.mTBCNPJ2.Name = "mTBCNPJ2";
+            this.mTBCNPJ2.Size = new System.Drawing.Size(155, 26);
+            this.mTBCNPJ2.TabIndex = 29;
             // 
             // FrmFornecedor
             // 
@@ -444,7 +445,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(777, 585);
-            this.Controls.Add(this.mTBCNPJ);
+            this.Controls.Add(this.mTBCNPJ2);
             this.Controls.Add(this.lblForcenedorCad);
             this.Controls.Add(this.dGFornecedor);
             this.Controls.Add(this.groupBox1);
@@ -523,6 +524,6 @@
         private ToolStripStatusLabel lbHora;
         private Button btnImprimirTela;
         private GroupBox groupBox2;
-        private MaskedTextBox mTBCNPJ;
+        private MaskedTextBox mTBCNPJ2;
     }
 }
