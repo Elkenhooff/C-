@@ -28,462 +28,430 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFornecedor));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblCódigo = new System.Windows.Forms.Label();
-            this.lblEndereço = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblUF = new System.Windows.Forms.Label();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.lblCep = new System.Windows.Forms.Label();
-            this.lblCNPJ2 = new System.Windows.Forms.Label();
-            this.lblCNPJ = new System.Windows.Forms.Label();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.tbCódigo = new System.Windows.Forms.TextBox();
-            this.tbNome = new System.Windows.Forms.TextBox();
-            this.tBEndereço = new System.Windows.Forms.TextBox();
-            this.tBCidade = new System.Windows.Forms.TextBox();
-            this.mTBPCNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.mTBCep = new System.Windows.Forms.MaskedTextBox();
-            this.mTBTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.cBUf = new System.Windows.Forms.ComboBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblData = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lbHora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.tBNumero = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnImprimirTela = new System.Windows.Forms.Button();
-            this.btnLimparDados = new System.Windows.Forms.Button();
-            this.btnNovoCli = new System.Windows.Forms.Button();
-            this.btnAlteraCli = new System.Windows.Forms.Button();
-            this.btnExcluirCli = new System.Windows.Forms.Button();
-            this.dGFornecedor = new System.Windows.Forms.DataGridView();
-            this.lblForcenedorCad = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.mTBCNPJ2 = new System.Windows.Forms.MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.statusStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGFornecedor)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            lblCódigo = new Label();
+            lblEndereço = new Label();
+            lblNome = new Label();
+            lblUF = new Label();
+            lblTelefone = new Label();
+            lblCep = new Label();
+            lblCNPJ2 = new Label();
+            lblCNPJ = new Label();
+            lblCidade = new Label();
+            tbCódigo = new TextBox();
+            tbNome = new TextBox();
+            tBEndereço = new TextBox();
+            tBCidade = new TextBox();
+            mTBPCNPJ = new MaskedTextBox();
+            btnPesquisar = new Button();
+            mTBCep = new MaskedTextBox();
+            mTBTelefone = new MaskedTextBox();
+            cBUf = new ComboBox();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            lblData = new ToolStripStatusLabel();
+            toolStripStatusLabel2 = new ToolStripStatusLabel();
+            lbHora = new ToolStripStatusLabel();
+            timer1 = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            tBNumero = new TextBox();
+            groupBox1 = new GroupBox();
+            btnImprimirTela = new Button();
+            btnLimparDados = new Button();
+            btnNovoFornec = new Button();
+            btnAlteraFornec = new Button();
+            btnExcluirCli = new Button();
+            dGFornecedor = new DataGridView();
+            lblForcenedorCad = new Label();
+            groupBox2 = new GroupBox();
+            mTBCNPJ2 = new MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            statusStrip1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dGFornecedor).BeginInit();
+            groupBox2.SuspendLayout();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(777, 91);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(0, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(777, 91);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // lblCódigo
             // 
-            this.lblCódigo.AutoSize = true;
-            this.lblCódigo.Location = new System.Drawing.Point(4, 33);
-            this.lblCódigo.Name = "lblCódigo";
-            this.lblCódigo.Size = new System.Drawing.Size(60, 18);
-            this.lblCódigo.TabIndex = 1;
-            this.lblCódigo.Text = "Código";
+            lblCódigo.AutoSize = true;
+            lblCódigo.Location = new Point(4, 33);
+            lblCódigo.Name = "lblCódigo";
+            lblCódigo.Size = new Size(60, 18);
+            lblCódigo.TabIndex = 1;
+            lblCódigo.Text = "Código";
             // 
             // lblEndereço
             // 
-            this.lblEndereço.AutoSize = true;
-            this.lblEndereço.Location = new System.Drawing.Point(18, 214);
-            this.lblEndereço.Name = "lblEndereço";
-            this.lblEndereço.Size = new System.Drawing.Size(76, 18);
-            this.lblEndereço.TabIndex = 2;
-            this.lblEndereço.Text = "Endereço";
-            this.lblEndereço.Click += new System.EventHandler(this.label2_Click);
+            lblEndereço.AutoSize = true;
+            lblEndereço.Location = new Point(18, 214);
+            lblEndereço.Name = "lblEndereço";
+            lblEndereço.Size = new Size(76, 18);
+            lblEndereço.TabIndex = 2;
+            lblEndereço.Text = "Endereço";
+            lblEndereço.Click += label2_Click;
             // 
             // lblNome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(18, 187);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(50, 18);
-            this.lblNome.TabIndex = 3;
-            this.lblNome.Text = "Nome";
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(18, 187);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(50, 18);
+            lblNome.TabIndex = 3;
+            lblNome.Text = "Nome";
             // 
             // lblUF
             // 
-            this.lblUF.AutoSize = true;
-            this.lblUF.Location = new System.Drawing.Point(493, 248);
-            this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(29, 18);
-            this.lblUF.TabIndex = 5;
-            this.lblUF.Text = "UF";
+            lblUF.AutoSize = true;
+            lblUF.Location = new Point(493, 248);
+            lblUF.Name = "lblUF";
+            lblUF.Size = new Size(29, 18);
+            lblUF.TabIndex = 5;
+            lblUF.Text = "UF";
             // 
             // lblTelefone
             // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(288, 278);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(66, 18);
-            this.lblTelefone.TabIndex = 6;
-            this.lblTelefone.Text = "Telefone";
-            this.lblTelefone.Click += new System.EventHandler(this.lblTelefone_Click);
+            lblTelefone.AutoSize = true;
+            lblTelefone.Location = new Point(288, 278);
+            lblTelefone.Name = "lblTelefone";
+            lblTelefone.Size = new Size(66, 18);
+            lblTelefone.TabIndex = 6;
+            lblTelefone.Text = "Telefone";
+            lblTelefone.Click += lblTelefone_Click;
             // 
             // lblCep
             // 
-            this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(350, 248);
-            this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(42, 18);
-            this.lblCep.TabIndex = 7;
-            this.lblCep.Text = "CEP";
+            lblCep.AutoSize = true;
+            lblCep.Location = new Point(350, 248);
+            lblCep.Name = "lblCep";
+            lblCep.Size = new Size(42, 18);
+            lblCep.TabIndex = 7;
+            lblCep.Text = "CEP";
             // 
             // lblCNPJ2
             // 
-            this.lblCNPJ2.AutoSize = true;
-            this.lblCNPJ2.Location = new System.Drawing.Point(164, 33);
-            this.lblCNPJ2.Name = "lblCNPJ2";
-            this.lblCNPJ2.Size = new System.Drawing.Size(50, 18);
-            this.lblCNPJ2.TabIndex = 8;
-            this.lblCNPJ2.Text = "CNPJ";
+            lblCNPJ2.AutoSize = true;
+            lblCNPJ2.Location = new Point(164, 33);
+            lblCNPJ2.Name = "lblCNPJ2";
+            lblCNPJ2.Size = new Size(50, 18);
+            lblCNPJ2.TabIndex = 8;
+            lblCNPJ2.Text = "CNPJ";
             // 
             // lblCNPJ
             // 
-            this.lblCNPJ.AutoSize = true;
-            this.lblCNPJ.Location = new System.Drawing.Point(18, 278);
-            this.lblCNPJ.Name = "lblCNPJ";
-            this.lblCNPJ.Size = new System.Drawing.Size(50, 18);
-            this.lblCNPJ.TabIndex = 9;
-            this.lblCNPJ.Text = "CNPJ";
+            lblCNPJ.AutoSize = true;
+            lblCNPJ.Location = new Point(18, 278);
+            lblCNPJ.Name = "lblCNPJ";
+            lblCNPJ.Size = new Size(50, 18);
+            lblCNPJ.TabIndex = 9;
+            lblCNPJ.Text = "CNPJ";
             // 
             // lblCidade
             // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(18, 246);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(60, 18);
-            this.lblCidade.TabIndex = 10;
-            this.lblCidade.Text = "Cidade";
+            lblCidade.AutoSize = true;
+            lblCidade.Location = new Point(18, 246);
+            lblCidade.Name = "lblCidade";
+            lblCidade.Size = new Size(60, 18);
+            lblCidade.TabIndex = 10;
+            lblCidade.Text = "Cidade";
             // 
             // tbCódigo
             // 
-            this.tbCódigo.Location = new System.Drawing.Point(80, 25);
-            this.tbCódigo.Name = "tbCódigo";
-            this.tbCódigo.Size = new System.Drawing.Size(78, 26);
-            this.tbCódigo.TabIndex = 11;
+            tbCódigo.Location = new Point(80, 25);
+            tbCódigo.Name = "tbCódigo";
+            tbCódigo.Size = new Size(78, 26);
+            tbCódigo.TabIndex = 11;
             // 
             // tbNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(94, 179);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(497, 26);
-            this.tbNome.TabIndex = 12;
+            tbNome.Location = new Point(94, 179);
+            tbNome.Name = "tbNome";
+            tbNome.Size = new Size(497, 26);
+            tbNome.TabIndex = 12;
             // 
             // tBEndereço
             // 
-            this.tBEndereço.Location = new System.Drawing.Point(94, 211);
-            this.tBEndereço.Name = "tBEndereço";
-            this.tBEndereço.Size = new System.Drawing.Size(393, 26);
-            this.tBEndereço.TabIndex = 13;
+            tBEndereço.Location = new Point(94, 211);
+            tBEndereço.Name = "tBEndereço";
+            tBEndereço.Size = new Size(393, 26);
+            tBEndereço.TabIndex = 13;
             // 
             // tBCidade
             // 
-            this.tBCidade.Location = new System.Drawing.Point(94, 243);
-            this.tBCidade.Name = "tBCidade";
-            this.tBCidade.Size = new System.Drawing.Size(255, 26);
-            this.tBCidade.TabIndex = 14;
+            tBCidade.Location = new Point(94, 243);
+            tBCidade.Name = "tBCidade";
+            tBCidade.Size = new Size(255, 26);
+            tBCidade.TabIndex = 14;
             // 
             // mTBPCNPJ
             // 
-            this.mTBPCNPJ.Location = new System.Drawing.Point(220, 26);
-            this.mTBPCNPJ.Mask = "00,000,000/0000-00";
-            this.mTBPCNPJ.Name = "mTBPCNPJ";
-            this.mTBPCNPJ.Size = new System.Drawing.Size(158, 26);
-            this.mTBPCNPJ.TabIndex = 16;
+            mTBPCNPJ.Location = new Point(220, 26);
+            mTBPCNPJ.Mask = "00,000,000/0000-00";
+            mTBPCNPJ.Name = "mTBPCNPJ";
+            mTBPCNPJ.Size = new Size(158, 26);
+            mTBPCNPJ.TabIndex = 16;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisar.Location = new System.Drawing.Point(452, 13);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(119, 42);
-            this.btnPesquisar.TabIndex = 17;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPesquisar.UseVisualStyleBackColor = true;
+            btnPesquisar.Image = (Image)resources.GetObject("btnPesquisar.Image");
+            btnPesquisar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPesquisar.Location = new Point(452, 13);
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.Size = new Size(119, 42);
+            btnPesquisar.TabIndex = 17;
+            btnPesquisar.Text = "Pesquisar";
+            btnPesquisar.TextAlign = ContentAlignment.MiddleRight;
+            btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // mTBCep
             // 
-            this.mTBCep.Location = new System.Drawing.Point(398, 245);
-            this.mTBCep.Mask = "00000-000";
-            this.mTBCep.Name = "mTBCep";
-            this.mTBCep.Size = new System.Drawing.Size(89, 26);
-            this.mTBCep.TabIndex = 18;
+            mTBCep.Location = new Point(398, 245);
+            mTBCep.Mask = "00000-000";
+            mTBCep.Name = "mTBCep";
+            mTBCep.Size = new Size(89, 26);
+            mTBCep.TabIndex = 18;
             // 
             // mTBTelefone
             // 
-            this.mTBTelefone.Location = new System.Drawing.Point(360, 275);
-            this.mTBTelefone.Mask = "(00) 00000-0000";
-            this.mTBTelefone.Name = "mTBTelefone";
-            this.mTBTelefone.Size = new System.Drawing.Size(127, 26);
-            this.mTBTelefone.TabIndex = 19;
+            mTBTelefone.Location = new Point(360, 275);
+            mTBTelefone.Mask = "(00) 00000-0000";
+            mTBTelefone.Name = "mTBTelefone";
+            mTBTelefone.Size = new Size(127, 26);
+            mTBTelefone.TabIndex = 19;
             // 
             // cBUf
             // 
-            this.cBUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cBUf.FormattingEnabled = true;
-            this.cBUf.Items.AddRange(new object[] {
-            "AC",
-            "AL",
-            "AP",
-            "AM",
-            "BA",
-            "CE",
-            "DF",
-            "GO",
-            "ES",
-            "MA",
-            "MT",
-            "MS",
-            "MG",
-            "PA",
-            "PB",
-            "PR",
-            "PE",
-            "PI",
-            "RJ",
-            "RN",
-            "RS",
-            "RO",
-            "RR",
-            "SP",
-            "SC",
-            "SE",
-            "TO"});
-            this.cBUf.Location = new System.Drawing.Point(528, 248);
-            this.cBUf.Name = "cBUf";
-            this.cBUf.Size = new System.Drawing.Size(63, 26);
-            this.cBUf.TabIndex = 21;
+            cBUf.DropDownStyle = ComboBoxStyle.DropDownList;
+            cBUf.FormattingEnabled = true;
+            cBUf.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "GO", "ES", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SP", "SC", "SE", "TO" });
+            cBUf.Location = new Point(528, 248);
+            cBUf.Name = "cBUf";
+            cBUf.Size = new Size(63, 26);
+            cBUf.TabIndex = 21;
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.lblData,
-            this.toolStripStatusLabel2,
-            this.lbHora});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 563);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(777, 22);
-            this.statusStrip1.TabIndex = 22;
-            this.statusStrip1.Text = "statusStrip1";
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, lblData, toolStripStatusLabel2, lbHora });
+            statusStrip1.Location = new Point(0, 563);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(777, 22);
+            statusStrip1.TabIndex = 22;
+            statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(41, 17);
-            this.toolStripStatusLabel1.Text = "Hoje é";
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(41, 17);
+            toolStripStatusLabel1.Text = "Hoje é";
             // 
             // lblData
             // 
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(118, 17);
-            this.lblData.Text = "toolStripStatusLabel2";
+            lblData.Name = "lblData";
+            lblData.Size = new Size(118, 17);
+            lblData.Text = "toolStripStatusLabel2";
             // 
             // toolStripStatusLabel2
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(10, 17);
-            this.toolStripStatusLabel2.Text = "|";
+            toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            toolStripStatusLabel2.Size = new Size(10, 17);
+            toolStripStatusLabel2.Text = "|";
             // 
             // lbHora
             // 
-            this.lbHora.Name = "lbHora";
-            this.lbHora.Size = new System.Drawing.Size(118, 17);
-            this.lbHora.Text = "toolStripStatusLabel3";
+            lbHora.Name = "lbHora";
+            lbHora.Size = new Size(118, 17);
+            lbHora.Text = "toolStripStatusLabel3";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(497, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 18);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "N°";
+            label1.AutoSize = true;
+            label1.Location = new Point(497, 219);
+            label1.Name = "label1";
+            label1.Size = new Size(25, 18);
+            label1.TabIndex = 23;
+            label1.Text = "N°";
             // 
             // tBNumero
             // 
-            this.tBNumero.Location = new System.Drawing.Point(528, 216);
-            this.tBNumero.Name = "tBNumero";
-            this.tBNumero.Size = new System.Drawing.Size(63, 26);
-            this.tBNumero.TabIndex = 24;
+            tBNumero.Location = new Point(528, 216);
+            tBNumero.Name = "tBNumero";
+            tBNumero.Size = new Size(63, 26);
+            tBNumero.TabIndex = 24;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnImprimirTela);
-            this.groupBox1.Controls.Add(this.btnLimparDados);
-            this.groupBox1.Controls.Add(this.btnNovoCli);
-            this.groupBox1.Controls.Add(this.btnAlteraCli);
-            this.groupBox1.Controls.Add(this.btnExcluirCli);
-            this.groupBox1.Location = new System.Drawing.Point(597, 98);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(165, 239);
-            this.groupBox1.TabIndex = 25;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Comandos";
+            groupBox1.Controls.Add(btnImprimirTela);
+            groupBox1.Controls.Add(btnLimparDados);
+            groupBox1.Controls.Add(btnNovoFornec);
+            groupBox1.Controls.Add(btnAlteraFornec);
+            groupBox1.Controls.Add(btnExcluirCli);
+            groupBox1.Location = new Point(597, 98);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(165, 239);
+            groupBox1.TabIndex = 25;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Comandos";
             // 
             // btnImprimirTela
             // 
-            this.btnImprimirTela.Font = new System.Drawing.Font("Arial", 12.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnImprimirTela.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirTela.Image")));
-            this.btnImprimirTela.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnImprimirTela.Location = new System.Drawing.Point(6, 190);
-            this.btnImprimirTela.Name = "btnImprimirTela";
-            this.btnImprimirTela.Size = new System.Drawing.Size(149, 42);
-            this.btnImprimirTela.TabIndex = 4;
-            this.btnImprimirTela.Text = "Imprimir Tela";
-            this.btnImprimirTela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimirTela.UseVisualStyleBackColor = true;
+            btnImprimirTela.Font = new Font("Arial", 12.7F, FontStyle.Regular, GraphicsUnit.Point);
+            btnImprimirTela.Image = (Image)resources.GetObject("btnImprimirTela.Image");
+            btnImprimirTela.ImageAlign = ContentAlignment.BottomLeft;
+            btnImprimirTela.Location = new Point(6, 190);
+            btnImprimirTela.Name = "btnImprimirTela";
+            btnImprimirTela.Size = new Size(149, 42);
+            btnImprimirTela.TabIndex = 4;
+            btnImprimirTela.Text = "Imprimir Tela";
+            btnImprimirTela.TextAlign = ContentAlignment.MiddleRight;
+            btnImprimirTela.UseVisualStyleBackColor = true;
             // 
             // btnLimparDados
             // 
-            this.btnLimparDados.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLimparDados.Image = ((System.Drawing.Image)(resources.GetObject("btnLimparDados.Image")));
-            this.btnLimparDados.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnLimparDados.Location = new System.Drawing.Point(6, 148);
-            this.btnLimparDados.Name = "btnLimparDados";
-            this.btnLimparDados.Size = new System.Drawing.Size(149, 42);
-            this.btnLimparDados.TabIndex = 3;
-            this.btnLimparDados.Text = "Limpar Dados";
-            this.btnLimparDados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimparDados.UseVisualStyleBackColor = true;
+            btnLimparDados.Font = new Font("Arial", 11.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLimparDados.Image = (Image)resources.GetObject("btnLimparDados.Image");
+            btnLimparDados.ImageAlign = ContentAlignment.BottomLeft;
+            btnLimparDados.Location = new Point(6, 148);
+            btnLimparDados.Name = "btnLimparDados";
+            btnLimparDados.Size = new Size(149, 42);
+            btnLimparDados.TabIndex = 3;
+            btnLimparDados.Text = "Limpar Dados";
+            btnLimparDados.TextAlign = ContentAlignment.MiddleRight;
+            btnLimparDados.UseVisualStyleBackColor = true;
             // 
-            // btnNovoCli
+            // btnNovoFornec
             // 
-            this.btnNovoCli.Image = ((System.Drawing.Image)(resources.GetObject("btnNovoCli.Image")));
-            this.btnNovoCli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNovoCli.Location = new System.Drawing.Point(6, 24);
-            this.btnNovoCli.Name = "btnNovoCli";
-            this.btnNovoCli.Size = new System.Drawing.Size(149, 42);
-            this.btnNovoCli.TabIndex = 0;
-            this.btnNovoCli.Text = "Novo Fornec.";
-            this.btnNovoCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNovoCli.UseVisualStyleBackColor = true;
-            this.btnNovoCli.Click += new System.EventHandler(this.btnNovoCli_Click);
+            btnNovoFornec.Image = (Image)resources.GetObject("btnNovoFornec.Image");
+            btnNovoFornec.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNovoFornec.Location = new Point(6, 24);
+            btnNovoFornec.Name = "btnNovoFornec";
+            btnNovoFornec.Size = new Size(149, 42);
+            btnNovoFornec.TabIndex = 0;
+            btnNovoFornec.Text = "Novo Fornec.";
+            btnNovoFornec.TextAlign = ContentAlignment.MiddleRight;
+            btnNovoFornec.UseVisualStyleBackColor = true;
+            btnNovoFornec.Click += btnNovoCli_Click;
             // 
-            // btnAlteraCli
+            // btnAlteraFornec
             // 
-            this.btnAlteraCli.Image = ((System.Drawing.Image)(resources.GetObject("btnAlteraCli.Image")));
-            this.btnAlteraCli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlteraCli.Location = new System.Drawing.Point(6, 65);
-            this.btnAlteraCli.Name = "btnAlteraCli";
-            this.btnAlteraCli.Size = new System.Drawing.Size(149, 42);
-            this.btnAlteraCli.TabIndex = 1;
-            this.btnAlteraCli.Text = "Alterar Cliente";
-            this.btnAlteraCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlteraCli.UseVisualStyleBackColor = true;
+            btnAlteraFornec.Image = (Image)resources.GetObject("btnAlteraFornec.Image");
+            btnAlteraFornec.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAlteraFornec.Location = new Point(6, 65);
+            btnAlteraFornec.Name = "btnAlteraFornec";
+            btnAlteraFornec.Size = new Size(149, 42);
+            btnAlteraFornec.TabIndex = 1;
+            btnAlteraFornec.Text = "Alterar Fornec";
+            btnAlteraFornec.TextAlign = ContentAlignment.MiddleRight;
+            btnAlteraFornec.UseVisualStyleBackColor = true;
             // 
             // btnExcluirCli
             // 
-            this.btnExcluirCli.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluirCli.Image")));
-            this.btnExcluirCli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluirCli.Location = new System.Drawing.Point(6, 106);
-            this.btnExcluirCli.Name = "btnExcluirCli";
-            this.btnExcluirCli.Size = new System.Drawing.Size(149, 42);
-            this.btnExcluirCli.TabIndex = 2;
-            this.btnExcluirCli.Text = "Excluir Cliente";
-            this.btnExcluirCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcluirCli.UseVisualStyleBackColor = true;
+            btnExcluirCli.Image = (Image)resources.GetObject("btnExcluirCli.Image");
+            btnExcluirCli.ImageAlign = ContentAlignment.MiddleLeft;
+            btnExcluirCli.Location = new Point(6, 106);
+            btnExcluirCli.Name = "btnExcluirCli";
+            btnExcluirCli.Size = new Size(149, 42);
+            btnExcluirCli.TabIndex = 2;
+            btnExcluirCli.Text = "Excluir Fornec";
+            btnExcluirCli.TextAlign = ContentAlignment.MiddleRight;
+            btnExcluirCli.UseVisualStyleBackColor = true;
             // 
             // dGFornecedor
             // 
-            this.dGFornecedor.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dGFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGFornecedor.Location = new System.Drawing.Point(14, 349);
-            this.dGFornecedor.Name = "dGFornecedor";
-            this.dGFornecedor.RowTemplate.Height = 25;
-            this.dGFornecedor.Size = new System.Drawing.Size(748, 202);
-            this.dGFornecedor.TabIndex = 26;
+            dGFornecedor.BackgroundColor = SystemColors.ActiveBorder;
+            dGFornecedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGFornecedor.Location = new Point(14, 349);
+            dGFornecedor.Name = "dGFornecedor";
+            dGFornecedor.RowTemplate.Height = 25;
+            dGFornecedor.Size = new Size(748, 202);
+            dGFornecedor.TabIndex = 26;
             // 
             // lblForcenedorCad
             // 
-            this.lblForcenedorCad.AutoSize = true;
-            this.lblForcenedorCad.Location = new System.Drawing.Point(14, 328);
-            this.lblForcenedorCad.Name = "lblForcenedorCad";
-            this.lblForcenedorCad.Size = new System.Drawing.Size(201, 18);
-            this.lblForcenedorCad.TabIndex = 27;
-            this.lblForcenedorCad.Text = "Fornecedores Cadastrados";
+            lblForcenedorCad.AutoSize = true;
+            lblForcenedorCad.Location = new Point(14, 328);
+            lblForcenedorCad.Name = "lblForcenedorCad";
+            lblForcenedorCad.Size = new Size(201, 18);
+            lblForcenedorCad.TabIndex = 27;
+            lblForcenedorCad.Text = "Fornecedores Cadastrados";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.lblCódigo);
-            this.groupBox2.Controls.Add(this.tbCódigo);
-            this.groupBox2.Controls.Add(this.lblCNPJ2);
-            this.groupBox2.Controls.Add(this.mTBPCNPJ);
-            this.groupBox2.Controls.Add(this.btnPesquisar);
-            this.groupBox2.Location = new System.Drawing.Point(14, 98);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(577, 61);
-            this.groupBox2.TabIndex = 28;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Efetuar Pesquisa";
+            groupBox2.Controls.Add(lblCódigo);
+            groupBox2.Controls.Add(tbCódigo);
+            groupBox2.Controls.Add(lblCNPJ2);
+            groupBox2.Controls.Add(mTBPCNPJ);
+            groupBox2.Controls.Add(btnPesquisar);
+            groupBox2.Location = new Point(14, 98);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(577, 61);
+            groupBox2.TabIndex = 28;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Efetuar Pesquisa";
             // 
             // mTBCNPJ2
             // 
-            this.mTBCNPJ2.Location = new System.Drawing.Point(94, 275);
-            this.mTBCNPJ2.Mask = "00,000,000/0000-00";
-            this.mTBCNPJ2.Name = "mTBCNPJ2";
-            this.mTBCNPJ2.Size = new System.Drawing.Size(155, 26);
-            this.mTBCNPJ2.TabIndex = 29;
+            mTBCNPJ2.Location = new Point(94, 275);
+            mTBCNPJ2.Mask = "00,000,000/0000-00";
+            mTBCNPJ2.Name = "mTBCNPJ2";
+            mTBCNPJ2.Size = new Size(155, 26);
+            mTBCNPJ2.TabIndex = 29;
             // 
             // FrmFornecedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(777, 585);
-            this.Controls.Add(this.mTBCNPJ2);
-            this.Controls.Add(this.lblForcenedorCad);
-            this.Controls.Add(this.dGFornecedor);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tBNumero);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.cBUf);
-            this.Controls.Add(this.mTBTelefone);
-            this.Controls.Add(this.mTBCep);
-            this.Controls.Add(this.tBCidade);
-            this.Controls.Add(this.tBEndereço);
-            this.Controls.Add(this.tbNome);
-            this.Controls.Add(this.lblCidade);
-            this.Controls.Add(this.lblCNPJ);
-            this.Controls.Add(this.lblCep);
-            this.Controls.Add(this.lblTelefone);
-            this.Controls.Add(this.lblUF);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.lblEndereço);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox2);
-            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FrmFornecedor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Cadastro de Fornecedores";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGFornecedor)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 18F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(777, 585);
+            Controls.Add(mTBCNPJ2);
+            Controls.Add(lblForcenedorCad);
+            Controls.Add(dGFornecedor);
+            Controls.Add(groupBox1);
+            Controls.Add(tBNumero);
+            Controls.Add(label1);
+            Controls.Add(statusStrip1);
+            Controls.Add(cBUf);
+            Controls.Add(mTBTelefone);
+            Controls.Add(mTBCep);
+            Controls.Add(tBCidade);
+            Controls.Add(tBEndereço);
+            Controls.Add(tbNome);
+            Controls.Add(lblCidade);
+            Controls.Add(lblCNPJ);
+            Controls.Add(lblCep);
+            Controls.Add(lblTelefone);
+            Controls.Add(lblUF);
+            Controls.Add(lblNome);
+            Controls.Add(lblEndereço);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBox2);
+            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FrmFornecedor";
+            StartPosition = FormStartPosition.Manual;
+            Text = "Cadastro de Fornecedores";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dGFornecedor).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -513,8 +481,8 @@
         private TextBox tBNumero;
         private GroupBox groupBox1;
         private Button btnLimparDados;
-        private Button btnNovoCli;
-        private Button btnAlteraCli;
+        private Button btnNovoFornec;
+        private Button btnAlteraFornec;
         private Button btnExcluirCli;
         private DataGridView dGFornecedor;
         private Label lblForcenedorCad;
