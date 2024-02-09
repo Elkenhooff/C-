@@ -28,517 +28,486 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClientes));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblCódigo = new System.Windows.Forms.Label();
-            this.lblEndereço = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblDtNasc = new System.Windows.Forms.Label();
-            this.lblUF = new System.Windows.Forms.Label();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.lblCep = new System.Windows.Forms.Label();
-            this.lblCpf = new System.Windows.Forms.Label();
-            this.lblComplemento = new System.Windows.Forms.Label();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.tbCódigo = new System.Windows.Forms.TextBox();
-            this.tbNome = new System.Windows.Forms.TextBox();
-            this.tBEndereço = new System.Windows.Forms.TextBox();
-            this.tBCidade = new System.Windows.Forms.TextBox();
-            this.tbComplemento = new System.Windows.Forms.TextBox();
-            this.mTBCPF = new System.Windows.Forms.MaskedTextBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.mTBCep = new System.Windows.Forms.MaskedTextBox();
-            this.mTBTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.mTBDtNasc = new System.Windows.Forms.MaskedTextBox();
-            this.cBUf = new System.Windows.Forms.ComboBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblData = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lbHora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.tBNumero = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnImprimirTela = new System.Windows.Forms.Button();
-            this.btnLimparDados = new System.Windows.Forms.Button();
-            this.btnNovoCli = new System.Windows.Forms.Button();
-            this.btnAlteraCli = new System.Windows.Forms.Button();
-            this.btnExcluirCli = new System.Windows.Forms.Button();
-            this.dGClientes = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnTeste = new System.Windows.Forms.Button();
-            this.lblCPF2 = new System.Windows.Forms.Label();
-            this.mTBCPF2 = new System.Windows.Forms.MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.statusStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGClientes)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            lblCódigo = new Label();
+            lblEndereço = new Label();
+            lblNome = new Label();
+            lblDtNasc = new Label();
+            lblUF = new Label();
+            lblTelefone = new Label();
+            lblCep = new Label();
+            lblCpf = new Label();
+            lblComplemento = new Label();
+            lblCidade = new Label();
+            tbCódigo = new TextBox();
+            tbNome = new TextBox();
+            tBEndereço = new TextBox();
+            tBCidade = new TextBox();
+            tbComplemento = new TextBox();
+            mTBCPF = new MaskedTextBox();
+            btnPesquisar = new Button();
+            mTBCep = new MaskedTextBox();
+            mTBTelefone = new MaskedTextBox();
+            mTBDtNasc = new MaskedTextBox();
+            cBUf = new ComboBox();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            lblData = new ToolStripStatusLabel();
+            toolStripStatusLabel2 = new ToolStripStatusLabel();
+            lbHora = new ToolStripStatusLabel();
+            timer1 = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            tBNumero = new TextBox();
+            groupBox1 = new GroupBox();
+            btnImprimirTela = new Button();
+            btnLimparDados = new Button();
+            btnNovoCli = new Button();
+            btnAlteraCli = new Button();
+            btnExcluirCli = new Button();
+            dGClientes = new DataGridView();
+            label2 = new Label();
+            groupBox2 = new GroupBox();
+            btnTeste = new Button();
+            lblCPF2 = new Label();
+            mTBCPF2 = new MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            statusStrip1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dGClientes).BeginInit();
+            groupBox2.SuspendLayout();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(777, 91);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(0, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(777, 91);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // lblCódigo
             // 
-            this.lblCódigo.AutoSize = true;
-            this.lblCódigo.Location = new System.Drawing.Point(4, 33);
-            this.lblCódigo.Name = "lblCódigo";
-            this.lblCódigo.Size = new System.Drawing.Size(60, 18);
-            this.lblCódigo.TabIndex = 1;
-            this.lblCódigo.Text = "Código";
+            lblCódigo.AutoSize = true;
+            lblCódigo.Location = new Point(4, 33);
+            lblCódigo.Name = "lblCódigo";
+            lblCódigo.Size = new Size(60, 18);
+            lblCódigo.TabIndex = 1;
+            lblCódigo.Text = "Código";
             // 
             // lblEndereço
             // 
-            this.lblEndereço.AutoSize = true;
-            this.lblEndereço.Location = new System.Drawing.Point(18, 214);
-            this.lblEndereço.Name = "lblEndereço";
-            this.lblEndereço.Size = new System.Drawing.Size(76, 18);
-            this.lblEndereço.TabIndex = 2;
-            this.lblEndereço.Text = "Endereço";
-            this.lblEndereço.Click += new System.EventHandler(this.label2_Click);
+            lblEndereço.AutoSize = true;
+            lblEndereço.Location = new Point(18, 214);
+            lblEndereço.Name = "lblEndereço";
+            lblEndereço.Size = new Size(76, 18);
+            lblEndereço.TabIndex = 2;
+            lblEndereço.Text = "Endereço";
+            lblEndereço.Click += label2_Click;
             // 
             // lblNome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(18, 187);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(50, 18);
-            this.lblNome.TabIndex = 3;
-            this.lblNome.Text = "Nome";
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(18, 187);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(50, 18);
+            lblNome.TabIndex = 3;
+            lblNome.Text = "Nome";
             // 
             // lblDtNasc
             // 
-            this.lblDtNasc.AutoSize = true;
-            this.lblDtNasc.Location = new System.Drawing.Point(430, 278);
-            this.lblDtNasc.Name = "lblDtNasc";
-            this.lblDtNasc.Size = new System.Drawing.Size(68, 18);
-            this.lblDtNasc.TabIndex = 4;
-            this.lblDtNasc.Text = "Dt. Nasc";
+            lblDtNasc.AutoSize = true;
+            lblDtNasc.Location = new Point(430, 278);
+            lblDtNasc.Name = "lblDtNasc";
+            lblDtNasc.Size = new Size(68, 18);
+            lblDtNasc.TabIndex = 4;
+            lblDtNasc.Text = "Dt. Nasc";
             // 
             // lblUF
             // 
-            this.lblUF.AutoSize = true;
-            this.lblUF.Location = new System.Drawing.Point(493, 248);
-            this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(29, 18);
-            this.lblUF.TabIndex = 5;
-            this.lblUF.Text = "UF";
+            lblUF.AutoSize = true;
+            lblUF.Location = new Point(493, 248);
+            lblUF.Name = "lblUF";
+            lblUF.Size = new Size(29, 18);
+            lblUF.TabIndex = 5;
+            lblUF.Text = "UF";
             // 
             // lblTelefone
             // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(225, 278);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(66, 18);
-            this.lblTelefone.TabIndex = 6;
-            this.lblTelefone.Text = "Telefone";
-            this.lblTelefone.Click += new System.EventHandler(this.lblTelefone_Click);
+            lblTelefone.AutoSize = true;
+            lblTelefone.Location = new Point(225, 278);
+            lblTelefone.Name = "lblTelefone";
+            lblTelefone.Size = new Size(66, 18);
+            lblTelefone.TabIndex = 6;
+            lblTelefone.Text = "Telefone";
+            lblTelefone.Click += lblTelefone_Click;
             // 
             // lblCep
             // 
-            this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(350, 248);
-            this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(42, 18);
-            this.lblCep.TabIndex = 7;
-            this.lblCep.Text = "CEP";
+            lblCep.AutoSize = true;
+            lblCep.Location = new Point(350, 248);
+            lblCep.Name = "lblCep";
+            lblCep.Size = new Size(42, 18);
+            lblCep.TabIndex = 7;
+            lblCep.Text = "CEP";
             // 
             // lblCpf
             // 
-            this.lblCpf.AutoSize = true;
-            this.lblCpf.Location = new System.Drawing.Point(164, 33);
-            this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(41, 18);
-            this.lblCpf.TabIndex = 8;
-            this.lblCpf.Text = "CPF";
+            lblCpf.AutoSize = true;
+            lblCpf.Location = new Point(164, 33);
+            lblCpf.Name = "lblCpf";
+            lblCpf.Size = new Size(41, 18);
+            lblCpf.TabIndex = 8;
+            lblCpf.Text = "CPF";
             // 
             // lblComplemento
             // 
-            this.lblComplemento.AutoSize = true;
-            this.lblComplemento.Location = new System.Drawing.Point(18, 278);
-            this.lblComplemento.Name = "lblComplemento";
-            this.lblComplemento.Size = new System.Drawing.Size(58, 18);
-            this.lblComplemento.TabIndex = 9;
-            this.lblComplemento.Text = "Compl:";
+            lblComplemento.AutoSize = true;
+            lblComplemento.Location = new Point(18, 278);
+            lblComplemento.Name = "lblComplemento";
+            lblComplemento.Size = new Size(58, 18);
+            lblComplemento.TabIndex = 9;
+            lblComplemento.Text = "Compl:";
             // 
             // lblCidade
             // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(18, 246);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(60, 18);
-            this.lblCidade.TabIndex = 10;
-            this.lblCidade.Text = "Cidade";
+            lblCidade.AutoSize = true;
+            lblCidade.Location = new Point(18, 246);
+            lblCidade.Name = "lblCidade";
+            lblCidade.Size = new Size(60, 18);
+            lblCidade.TabIndex = 10;
+            lblCidade.Text = "Cidade";
             // 
             // tbCódigo
             // 
-            this.tbCódigo.Location = new System.Drawing.Point(80, 25);
-            this.tbCódigo.Name = "tbCódigo";
-            this.tbCódigo.Size = new System.Drawing.Size(78, 26);
-            this.tbCódigo.TabIndex = 11;
+            tbCódigo.Location = new Point(80, 25);
+            tbCódigo.Name = "tbCódigo";
+            tbCódigo.Size = new Size(78, 26);
+            tbCódigo.TabIndex = 11;
             // 
             // tbNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(94, 179);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(330, 26);
-            this.tbNome.TabIndex = 12;
+            tbNome.Location = new Point(94, 179);
+            tbNome.Name = "tbNome";
+            tbNome.Size = new Size(330, 26);
+            tbNome.TabIndex = 12;
             // 
             // tBEndereço
             // 
-            this.tBEndereço.Location = new System.Drawing.Point(94, 211);
-            this.tBEndereço.Name = "tBEndereço";
-            this.tBEndereço.Size = new System.Drawing.Size(380, 26);
-            this.tBEndereço.TabIndex = 13;
+            tBEndereço.Location = new Point(94, 211);
+            tBEndereço.Name = "tBEndereço";
+            tBEndereço.Size = new Size(380, 26);
+            tBEndereço.TabIndex = 13;
             // 
             // tBCidade
             // 
-            this.tBCidade.Location = new System.Drawing.Point(94, 243);
-            this.tBCidade.Name = "tBCidade";
-            this.tBCidade.Size = new System.Drawing.Size(255, 26);
-            this.tBCidade.TabIndex = 14;
+            tBCidade.Location = new Point(94, 243);
+            tBCidade.Name = "tBCidade";
+            tBCidade.Size = new Size(255, 26);
+            tBCidade.TabIndex = 14;
             // 
             // tbComplemento
             // 
-            this.tbComplemento.Location = new System.Drawing.Point(94, 275);
-            this.tbComplemento.Name = "tbComplemento";
-            this.tbComplemento.Size = new System.Drawing.Size(130, 26);
-            this.tbComplemento.TabIndex = 15;
+            tbComplemento.Location = new Point(94, 275);
+            tbComplemento.Name = "tbComplemento";
+            tbComplemento.Size = new Size(130, 26);
+            tbComplemento.TabIndex = 15;
             // 
             // mTBCPF
             // 
-            this.mTBCPF.Location = new System.Drawing.Point(211, 25);
-            this.mTBCPF.Mask = "000,000,000-00";
-            this.mTBCPF.Name = "mTBCPF";
-            this.mTBCPF.Size = new System.Drawing.Size(124, 26);
-            this.mTBCPF.TabIndex = 16;
+            mTBCPF.Location = new Point(211, 25);
+            mTBCPF.Mask = "000,000,000-00";
+            mTBCPF.Name = "mTBCPF";
+            mTBCPF.Size = new Size(124, 26);
+            mTBCPF.TabIndex = 16;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisar.Location = new System.Drawing.Point(341, 20);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(119, 34);
-            this.btnPesquisar.TabIndex = 17;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPesquisar.UseVisualStyleBackColor = true;
+            btnPesquisar.Image = (Image)resources.GetObject("btnPesquisar.Image");
+            btnPesquisar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPesquisar.Location = new Point(341, 20);
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.Size = new Size(119, 34);
+            btnPesquisar.TabIndex = 17;
+            btnPesquisar.Text = "Pesquisar";
+            btnPesquisar.TextAlign = ContentAlignment.MiddleRight;
+            btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // mTBCep
             // 
-            this.mTBCep.Location = new System.Drawing.Point(398, 245);
-            this.mTBCep.Mask = "00000-000";
-            this.mTBCep.Name = "mTBCep";
-            this.mTBCep.Size = new System.Drawing.Size(89, 26);
-            this.mTBCep.TabIndex = 18;
+            mTBCep.Location = new Point(398, 245);
+            mTBCep.Mask = "00000-000";
+            mTBCep.Name = "mTBCep";
+            mTBCep.Size = new Size(89, 26);
+            mTBCep.TabIndex = 18;
             // 
             // mTBTelefone
             // 
-            this.mTBTelefone.Location = new System.Drawing.Point(297, 275);
-            this.mTBTelefone.Mask = "(00) 00000-0000";
-            this.mTBTelefone.Name = "mTBTelefone";
-            this.mTBTelefone.Size = new System.Drawing.Size(127, 26);
-            this.mTBTelefone.TabIndex = 19;
+            mTBTelefone.Location = new Point(297, 275);
+            mTBTelefone.Mask = "(00) 00000-0000";
+            mTBTelefone.Name = "mTBTelefone";
+            mTBTelefone.Size = new Size(127, 26);
+            mTBTelefone.TabIndex = 19;
             // 
             // mTBDtNasc
             // 
-            this.mTBDtNasc.Location = new System.Drawing.Point(504, 275);
-            this.mTBDtNasc.Mask = "00/00/0000";
-            this.mTBDtNasc.Name = "mTBDtNasc";
-            this.mTBDtNasc.Size = new System.Drawing.Size(87, 26);
-            this.mTBDtNasc.TabIndex = 20;
+            mTBDtNasc.Location = new Point(504, 275);
+            mTBDtNasc.Mask = "00/00/0000";
+            mTBDtNasc.Name = "mTBDtNasc";
+            mTBDtNasc.Size = new Size(87, 26);
+            mTBDtNasc.TabIndex = 20;
             // 
             // cBUf
             // 
-            this.cBUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cBUf.FormattingEnabled = true;
-            this.cBUf.Items.AddRange(new object[] {
-            "AC",
-            "AL",
-            "AP",
-            "AM",
-            "BA",
-            "CE",
-            "DF",
-            "GO",
-            "ES",
-            "MA",
-            "MT",
-            "MS",
-            "MG",
-            "PA",
-            "PB",
-            "PR",
-            "PE",
-            "PI",
-            "RJ",
-            "RN",
-            "RS",
-            "RO",
-            "RR",
-            "SP",
-            "SC",
-            "SE",
-            "TO"});
-            this.cBUf.Location = new System.Drawing.Point(528, 248);
-            this.cBUf.Name = "cBUf";
-            this.cBUf.Size = new System.Drawing.Size(63, 26);
-            this.cBUf.TabIndex = 21;
-            this.cBUf.SelectedIndexChanged += new System.EventHandler(this.cBUf_SelectedIndexChanged);
+            cBUf.DropDownStyle = ComboBoxStyle.DropDownList;
+            cBUf.FormattingEnabled = true;
+            cBUf.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "GO", "ES", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SP", "SC", "SE", "TO" });
+            cBUf.Location = new Point(528, 248);
+            cBUf.Name = "cBUf";
+            cBUf.Size = new Size(63, 26);
+            cBUf.TabIndex = 21;
+            cBUf.SelectedIndexChanged += cBUf_SelectedIndexChanged;
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.lblData,
-            this.toolStripStatusLabel2,
-            this.lbHora});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 563);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(777, 22);
-            this.statusStrip1.TabIndex = 22;
-            this.statusStrip1.Text = "statusStrip1";
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, lblData, toolStripStatusLabel2, lbHora });
+            statusStrip1.Location = new Point(0, 563);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(777, 22);
+            statusStrip1.TabIndex = 22;
+            statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(41, 17);
-            this.toolStripStatusLabel1.Text = "Hoje é";
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(41, 17);
+            toolStripStatusLabel1.Text = "Hoje é";
             // 
             // lblData
             // 
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(118, 17);
-            this.lblData.Text = "toolStripStatusLabel2";
+            lblData.Name = "lblData";
+            lblData.Size = new Size(118, 17);
+            lblData.Text = "toolStripStatusLabel2";
             // 
             // toolStripStatusLabel2
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(10, 17);
-            this.toolStripStatusLabel2.Text = "|";
+            toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            toolStripStatusLabel2.Size = new Size(10, 17);
+            toolStripStatusLabel2.Text = "|";
             // 
             // lbHora
             // 
-            this.lbHora.Name = "lbHora";
-            this.lbHora.Size = new System.Drawing.Size(118, 17);
-            this.lbHora.Text = "toolStripStatusLabel3";
+            lbHora.Name = "lbHora";
+            lbHora.Size = new Size(118, 17);
+            lbHora.Text = "toolStripStatusLabel3";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(497, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 18);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "N°";
+            label1.AutoSize = true;
+            label1.Location = new Point(497, 219);
+            label1.Name = "label1";
+            label1.Size = new Size(25, 18);
+            label1.TabIndex = 23;
+            label1.Text = "N°";
             // 
             // tBNumero
             // 
-            this.tBNumero.Location = new System.Drawing.Point(528, 216);
-            this.tBNumero.Name = "tBNumero";
-            this.tBNumero.Size = new System.Drawing.Size(63, 26);
-            this.tBNumero.TabIndex = 24;
+            tBNumero.Location = new Point(528, 216);
+            tBNumero.Name = "tBNumero";
+            tBNumero.Size = new Size(63, 26);
+            tBNumero.TabIndex = 24;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnImprimirTela);
-            this.groupBox1.Controls.Add(this.btnLimparDados);
-            this.groupBox1.Controls.Add(this.btnNovoCli);
-            this.groupBox1.Controls.Add(this.btnAlteraCli);
-            this.groupBox1.Controls.Add(this.btnExcluirCli);
-            this.groupBox1.Location = new System.Drawing.Point(597, 98);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(165, 239);
-            this.groupBox1.TabIndex = 25;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Comandos";
+            groupBox1.Controls.Add(btnImprimirTela);
+            groupBox1.Controls.Add(btnLimparDados);
+            groupBox1.Controls.Add(btnNovoCli);
+            groupBox1.Controls.Add(btnAlteraCli);
+            groupBox1.Controls.Add(btnExcluirCli);
+            groupBox1.Location = new Point(597, 98);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(165, 239);
+            groupBox1.TabIndex = 25;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Comandos";
             // 
             // btnImprimirTela
             // 
-            this.btnImprimirTela.Font = new System.Drawing.Font("Arial", 12.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnImprimirTela.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirTela.Image")));
-            this.btnImprimirTela.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnImprimirTela.Location = new System.Drawing.Point(6, 190);
-            this.btnImprimirTela.Name = "btnImprimirTela";
-            this.btnImprimirTela.Size = new System.Drawing.Size(149, 42);
-            this.btnImprimirTela.TabIndex = 4;
-            this.btnImprimirTela.Text = "Imprimir Tela";
-            this.btnImprimirTela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimirTela.UseVisualStyleBackColor = true;
+            btnImprimirTela.Font = new Font("Arial", 12.7F, FontStyle.Regular, GraphicsUnit.Point);
+            btnImprimirTela.Image = (Image)resources.GetObject("btnImprimirTela.Image");
+            btnImprimirTela.ImageAlign = ContentAlignment.BottomLeft;
+            btnImprimirTela.Location = new Point(6, 190);
+            btnImprimirTela.Name = "btnImprimirTela";
+            btnImprimirTela.Size = new Size(149, 42);
+            btnImprimirTela.TabIndex = 4;
+            btnImprimirTela.Text = "Imprimir Tela";
+            btnImprimirTela.TextAlign = ContentAlignment.MiddleRight;
+            btnImprimirTela.UseVisualStyleBackColor = true;
             // 
             // btnLimparDados
             // 
-            this.btnLimparDados.Font = new System.Drawing.Font("Arial", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLimparDados.Image = ((System.Drawing.Image)(resources.GetObject("btnLimparDados.Image")));
-            this.btnLimparDados.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnLimparDados.Location = new System.Drawing.Point(6, 148);
-            this.btnLimparDados.Name = "btnLimparDados";
-            this.btnLimparDados.Size = new System.Drawing.Size(149, 42);
-            this.btnLimparDados.TabIndex = 3;
-            this.btnLimparDados.Text = "Limpar Dados";
-            this.btnLimparDados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimparDados.UseVisualStyleBackColor = true;
+            btnLimparDados.Font = new Font("Arial", 11.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLimparDados.Image = (Image)resources.GetObject("btnLimparDados.Image");
+            btnLimparDados.ImageAlign = ContentAlignment.BottomLeft;
+            btnLimparDados.Location = new Point(6, 148);
+            btnLimparDados.Name = "btnLimparDados";
+            btnLimparDados.Size = new Size(149, 42);
+            btnLimparDados.TabIndex = 3;
+            btnLimparDados.Text = "Limpar Dados";
+            btnLimparDados.TextAlign = ContentAlignment.MiddleRight;
+            btnLimparDados.UseVisualStyleBackColor = true;
             // 
             // btnNovoCli
             // 
-            this.btnNovoCli.Image = ((System.Drawing.Image)(resources.GetObject("btnNovoCli.Image")));
-            this.btnNovoCli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNovoCli.Location = new System.Drawing.Point(6, 24);
-            this.btnNovoCli.Name = "btnNovoCli";
-            this.btnNovoCli.Size = new System.Drawing.Size(149, 42);
-            this.btnNovoCli.TabIndex = 0;
-            this.btnNovoCli.Text = "Novo Cliente";
-            this.btnNovoCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNovoCli.UseVisualStyleBackColor = true;
-            this.btnNovoCli.Click += new System.EventHandler(this.btnNovoCli_Click);
+            btnNovoCli.Image = (Image)resources.GetObject("btnNovoCli.Image");
+            btnNovoCli.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNovoCli.Location = new Point(6, 24);
+            btnNovoCli.Name = "btnNovoCli";
+            btnNovoCli.Size = new Size(149, 42);
+            btnNovoCli.TabIndex = 0;
+            btnNovoCli.Text = "Novo Cliente";
+            btnNovoCli.TextAlign = ContentAlignment.MiddleRight;
+            btnNovoCli.UseVisualStyleBackColor = true;
+            btnNovoCli.Click += btnNovoCli_Click;
             // 
             // btnAlteraCli
             // 
-            this.btnAlteraCli.Image = ((System.Drawing.Image)(resources.GetObject("btnAlteraCli.Image")));
-            this.btnAlteraCli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlteraCli.Location = new System.Drawing.Point(6, 65);
-            this.btnAlteraCli.Name = "btnAlteraCli";
-            this.btnAlteraCli.Size = new System.Drawing.Size(149, 42);
-            this.btnAlteraCli.TabIndex = 1;
-            this.btnAlteraCli.Text = "Alterar Cliente";
-            this.btnAlteraCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlteraCli.UseVisualStyleBackColor = true;
+            btnAlteraCli.Image = (Image)resources.GetObject("btnAlteraCli.Image");
+            btnAlteraCli.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAlteraCli.Location = new Point(6, 65);
+            btnAlteraCli.Name = "btnAlteraCli";
+            btnAlteraCli.Size = new Size(149, 42);
+            btnAlteraCli.TabIndex = 1;
+            btnAlteraCli.Text = "Alterar Cliente";
+            btnAlteraCli.TextAlign = ContentAlignment.MiddleRight;
+            btnAlteraCli.UseVisualStyleBackColor = true;
             // 
             // btnExcluirCli
             // 
-            this.btnExcluirCli.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluirCli.Image")));
-            this.btnExcluirCli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluirCli.Location = new System.Drawing.Point(6, 106);
-            this.btnExcluirCli.Name = "btnExcluirCli";
-            this.btnExcluirCli.Size = new System.Drawing.Size(149, 42);
-            this.btnExcluirCli.TabIndex = 2;
-            this.btnExcluirCli.Text = "Excluir Cliente";
-            this.btnExcluirCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcluirCli.UseVisualStyleBackColor = true;
+            btnExcluirCli.Image = (Image)resources.GetObject("btnExcluirCli.Image");
+            btnExcluirCli.ImageAlign = ContentAlignment.MiddleLeft;
+            btnExcluirCli.Location = new Point(6, 106);
+            btnExcluirCli.Name = "btnExcluirCli";
+            btnExcluirCli.Size = new Size(149, 42);
+            btnExcluirCli.TabIndex = 2;
+            btnExcluirCli.Text = "Excluir Cliente";
+            btnExcluirCli.TextAlign = ContentAlignment.MiddleRight;
+            btnExcluirCli.UseVisualStyleBackColor = true;
             // 
             // dGClientes
             // 
-            this.dGClientes.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dGClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGClientes.Location = new System.Drawing.Point(14, 349);
-            this.dGClientes.Name = "dGClientes";
-            this.dGClientes.RowTemplate.Height = 25;
-            this.dGClientes.Size = new System.Drawing.Size(748, 202);
-            this.dGClientes.TabIndex = 26;
-            this.dGClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGClientes_CellContentClick);
+            dGClientes.BackgroundColor = SystemColors.ActiveBorder;
+            dGClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGClientes.Location = new Point(14, 349);
+            dGClientes.Name = "dGClientes";
+            dGClientes.RowTemplate.Height = 25;
+            dGClientes.Size = new Size(748, 202);
+            dGClientes.TabIndex = 26;
+            dGClientes.CellContentClick += dGClientes_CellContentClick;
+            dGClientes.MouseClick += dGClientes_MouseClick;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 328);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 18);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Clientes Cadastrados";
+            label2.AutoSize = true;
+            label2.Location = new Point(14, 328);
+            label2.Name = "label2";
+            label2.Size = new Size(160, 18);
+            label2.TabIndex = 27;
+            label2.Text = "Clientes Cadastrados";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.lblCódigo);
-            this.groupBox2.Controls.Add(this.tbCódigo);
-            this.groupBox2.Controls.Add(this.lblCpf);
-            this.groupBox2.Controls.Add(this.mTBCPF);
-            this.groupBox2.Controls.Add(this.btnPesquisar);
-            this.groupBox2.Location = new System.Drawing.Point(14, 98);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(577, 61);
-            this.groupBox2.TabIndex = 28;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Efetuar Pesquisa";
+            groupBox2.Controls.Add(lblCódigo);
+            groupBox2.Controls.Add(tbCódigo);
+            groupBox2.Controls.Add(lblCpf);
+            groupBox2.Controls.Add(mTBCPF);
+            groupBox2.Controls.Add(btnPesquisar);
+            groupBox2.Location = new Point(14, 98);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(577, 61);
+            groupBox2.TabIndex = 28;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Efetuar Pesquisa";
             // 
             // btnTeste
             // 
-            this.btnTeste.Location = new System.Drawing.Point(595, 347);
-            this.btnTeste.Name = "btnTeste";
-            this.btnTeste.Size = new System.Drawing.Size(75, 23);
-            this.btnTeste.TabIndex = 29;
-            this.btnTeste.Text = "Teste de Conexão";
-            this.btnTeste.UseVisualStyleBackColor = true;
-            this.btnTeste.Click += new System.EventHandler(this.btnTeste_Click);
+            btnTeste.Location = new Point(595, 347);
+            btnTeste.Name = "btnTeste";
+            btnTeste.Size = new Size(75, 23);
+            btnTeste.TabIndex = 29;
+            btnTeste.Text = "Teste de Conexão";
+            btnTeste.UseVisualStyleBackColor = true;
+            btnTeste.Click += btnTeste_Click;
             // 
             // lblCPF2
             // 
-            this.lblCPF2.AutoSize = true;
-            this.lblCPF2.Location = new System.Drawing.Point(424, 187);
-            this.lblCPF2.Name = "lblCPF2";
-            this.lblCPF2.Size = new System.Drawing.Size(41, 18);
-            this.lblCPF2.TabIndex = 31;
-            this.lblCPF2.Text = "CPF";
+            lblCPF2.AutoSize = true;
+            lblCPF2.Location = new Point(424, 187);
+            lblCPF2.Name = "lblCPF2";
+            lblCPF2.Size = new Size(41, 18);
+            lblCPF2.TabIndex = 31;
+            lblCPF2.Text = "CPF";
             // 
             // mTBCPF2
             // 
-            this.mTBCPF2.Location = new System.Drawing.Point(471, 179);
-            this.mTBCPF2.Mask = "000,000,000-00";
-            this.mTBCPF2.Name = "mTBCPF2";
-            this.mTBCPF2.Size = new System.Drawing.Size(120, 26);
-            this.mTBCPF2.TabIndex = 32;
+            mTBCPF2.Location = new Point(471, 179);
+            mTBCPF2.Mask = "000,000,000-00";
+            mTBCPF2.Name = "mTBCPF2";
+            mTBCPF2.Size = new Size(120, 26);
+            mTBCPF2.TabIndex = 32;
             // 
             // FrmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(777, 585);
-            this.Controls.Add(this.mTBCPF2);
-            this.Controls.Add(this.lblCPF2);
-            this.Controls.Add(this.btnTeste);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dGClientes);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tBNumero);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.cBUf);
-            this.Controls.Add(this.mTBDtNasc);
-            this.Controls.Add(this.mTBTelefone);
-            this.Controls.Add(this.mTBCep);
-            this.Controls.Add(this.tbComplemento);
-            this.Controls.Add(this.tBCidade);
-            this.Controls.Add(this.tBEndereço);
-            this.Controls.Add(this.tbNome);
-            this.Controls.Add(this.lblCidade);
-            this.Controls.Add(this.lblComplemento);
-            this.Controls.Add(this.lblCep);
-            this.Controls.Add(this.lblTelefone);
-            this.Controls.Add(this.lblUF);
-            this.Controls.Add(this.lblDtNasc);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.lblEndereço);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox2);
-            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FrmClientes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Cadastro de Clientes";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGClientes)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 18F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(777, 585);
+            Controls.Add(mTBCPF2);
+            Controls.Add(lblCPF2);
+            Controls.Add(btnTeste);
+            Controls.Add(label2);
+            Controls.Add(dGClientes);
+            Controls.Add(groupBox1);
+            Controls.Add(tBNumero);
+            Controls.Add(label1);
+            Controls.Add(statusStrip1);
+            Controls.Add(cBUf);
+            Controls.Add(mTBDtNasc);
+            Controls.Add(mTBTelefone);
+            Controls.Add(mTBCep);
+            Controls.Add(tbComplemento);
+            Controls.Add(tBCidade);
+            Controls.Add(tBEndereço);
+            Controls.Add(tbNome);
+            Controls.Add(lblCidade);
+            Controls.Add(lblComplemento);
+            Controls.Add(lblCep);
+            Controls.Add(lblTelefone);
+            Controls.Add(lblUF);
+            Controls.Add(lblDtNasc);
+            Controls.Add(lblNome);
+            Controls.Add(lblEndereço);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBox2);
+            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FrmClientes";
+            StartPosition = FormStartPosition.Manual;
+            Text = "Cadastro de Clientes";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dGClientes).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

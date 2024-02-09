@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TITech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+253d4a0ed5c30a67a310d088b7077bc946a03bef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dc2f1945fe66181e9a26cc36c430c04a01e78d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TITech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TITech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

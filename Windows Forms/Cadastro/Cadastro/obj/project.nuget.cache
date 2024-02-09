@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MmP1gzbEJzTN42+Dlpa+bFqlfLsiK2u+wUar+H6w1rG1ZUm7kwV7BYayCwym0jOEBsu3kZ40CSMXJS5OR6ZLBQ==",
+  "dgSpecHash": "RTITkLAR5S97H1lV3DJR1C9zEfd3fKfV/8aarP25t1hNVQAkFK0XIyIRKdqCbdr/Lq7HFy6SKVMoMW4RLOXLSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pedro.hdsantos4\\Documents\\GitHub\\CSharp\\Windows Forms\\Cadastro\\Cadastro\\Cadastro.csproj",
+  "projectFilePath": "C:\\Users\\pedro.hdsantos4\\source\\repos\\Cadastro\\Cadastro\\Cadastro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro.hdsantos4\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\pedro.hdsantos4\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
